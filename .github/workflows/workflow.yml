@@ -17,11 +17,9 @@ jobs:
         run: |
           npm ci
 
-
       - name: Link with ESLint
         run: |
           npm run lint
 
-
-       - name: Run unit test with Jest
-         run: npm  test -- --coverage
+      - name: Run unit test with Jest
+        run: npm test -- --coverage
